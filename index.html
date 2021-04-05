@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Email Form</h1>
+    <div class="group">
+      <form action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+        <div class="item">
+          <label for="user-name">Name:</label>
+          <input id="user-name" type="text" name="name" autofocus="on" placeholder="Enter your full name" required/>
+        </div>
+        <div class="item">
+          <label for="email-address">Email:</label>
+          <input id="email-address" type="text" name="email" required/>
+        </div>
+        <div class="item">
+          <label for="form-message">Your message:</label>
+          <textarea id="form-message" name="message" maxlength="1000" required></textarea>
+        </div>
+        <div class="item">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
